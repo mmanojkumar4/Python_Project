@@ -154,7 +154,7 @@ def export_to_csv(filename="expenses_report.csv"):
 
 def cli_menu():
     while True:
-        print("=== 💼 Expense Tracker ===")
+        print("===  Expense Tracker ===")
         print("1. Add Expense")
         print("2. View Expenses")
         print("3. Delete Expense")
@@ -207,9 +207,9 @@ def cli_menu():
             if res["status"] == "empty":
                 print(res["message"], "\n")
             else:
-                print(f"\n💰 Total Spending: ₹{res['total_spent']:.2f}")
-                print(f"📅 Today's Spending: ₹{res['today_spent']:.2f}")
-                print("\n📊 Category Summary:")
+                print(f"\n Total Spending: ₹{res['total_spent']:.2f}")
+                print(f" Today's Spending: ₹{res['today_spent']:.2f}")
+                print("\n Category Summary:")
                 for cat, amt in res["category_summary"].items():
                     print(f" - {cat}: ₹{amt:.2f}")
                 print()
@@ -241,7 +241,7 @@ def cli_menu():
             reverse = True if order == "desc" else False
             res = sort_expenses_endpoint(by=key, reverse=reverse)
             if res["status"] == "success":
-                print(f"\n📋 Sorted by {key} ({'Descending' if reverse else 'Ascending'}):")
+                print(f"\n Sorted by {key} ({'Descending' if reverse else 'Ascending'}):")
                 for i, exp in enumerate(res["data"], 1):
                     print(f"{i}. {exp['name']} | ₹{exp['amount']} | {exp['category']} | {exp['date']}")
                 print()
@@ -254,7 +254,7 @@ def cli_menu():
             edate = input("End date (YYYY-MM-DD or skip): ")
             res = filter_expenses_endpoint(category=cat or None, start_date=sdate or None, end_date=edate or None)
             if res["status"] == "success":
-                print(f"\n📋 Filtered Results ({res['filtered_count']} found):")
+                print(f"\nFiltered Results ({res['filtered_count']} found):")
                 for i, exp in enumerate(res["data"], 1):
                     print(f"{i}. {exp['name']} | ₹{exp['amount']} | {exp['category']} | {exp['date']}")
                 print()
@@ -266,7 +266,7 @@ def cli_menu():
             print(res["message"], "\n")
 
         elif choice == "9":
-            print("👋 Exiting... Goodbye!")
+            print(" Exiting... Goodbye!")
             break
 
         else:
