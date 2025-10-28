@@ -1,0 +1,56 @@
+[
+    {
+        "name": "travel",
+        "category": "Travel",
+        "amount": 60.0,
+        "date": "2025-10-24 17:07:18"
+    },
+    {
+        "name": "Banglore Expenses",
+        "category": "Travel",
+        "amount": 3708.0,
+        "date": "2025-10-24 17:09:23"
+    },
+    {
+        "name": "Trading",
+        "category": "Trading",
+        "amount": 171.0,
+        "date": "2025-10-24 17:09:44"
+    },
+    {
+        "name": "Shoping",
+        "category": "Shoping",
+        "amount": 6500.0,
+        "date": "2025-10-24 17:10:12"
+    },
+    {
+        "name": "shoping",
+        "category": "shoping",
+        "amount": 4700.0,
+        "date": "2025-10-24 17:10:32"
+    },
+    {
+        "name": "rent",
+        "category": "rent",
+        "amount": 700.0,
+        "date": "2025-10-24 17:10:49"
+    },
+    {
+        "name": "Travel to office",
+        "category": "Travel",
+        "amount": 100.0,
+        "date": "2025-10-26 17:53:57"
+    },
+    {
+        "name": "Ofiice",
+        "category": "Food",
+        "amount": 300.0,
+        "date": "2025-10-26 17:54:12"
+    },
+    {
+        "name": "hii",
+        "category": "hh",
+        "amount": 1000.0,
+        "date": "2025-10-26 18:02:47"
+    }
+]
